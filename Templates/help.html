@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+  .help-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('/static/ChatGPT-Image.png') center/cover no-repeat;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .help-hero h1 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .help-content {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+
+  .faq-item {
+    margin-bottom: 25px;
+  }
+
+  .faq-item h3 {
+    color: #00bcd4;
+    margin-bottom: 5px;
+  }
+</style>
+
+<section class="help-hero">
+  <h1>How Can We Help You?</h1>
+</section>
+
+<section class="help-content">
+  <div class="faq-item">
+    <h3>How do I access your educational tools?</h3>
+    <p>You can access our AI-powered tools by registering on our platform and visiting the "Tools" section in your dashboard.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Where are your tech hubs located?</h3>
+    <p>We currently operate in Kano, Nigeria, with plans to expand across West Africa. Visit our "Locations" page for updates.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>How can I get involved with Ashafalalah.LTD?</h3>
+    <p>You can join as a volunteer, investor, or contributor by reaching out via our <a href="{% url 'contact' %}">Contact page</a>.</p>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('/static/ChatGPT-Image.png') center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+
+  .btn-explore {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #00bcd4;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .btn-explore:hover {
+    background-color: #0097a7;
+  }
+</style>
+
+<section class="hero-section">
+  <div class="container">
+    <h1>Welcome to Ashafalalah.LTD</h1>
+    <p>
+      We're building innovative tech-driven solutions to empower education, digital access, and entrepreneurship—from Kano, Nigeria to the world.
+    </p>
+    <p>
+      Discover our services, meet our passionate team, and explore how Ashafalalah.LTD is shaping the future.
+    </p>
+    <a href="{% url 'about' %}" class="btn-explore">Explore More</a>
+  </div>
+</section>
+{% endblock %}

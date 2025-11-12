@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+  .about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('/static/ChatGPT-Image.png') center/cover no-repeat;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  }
+
+  .about-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+
+  .about-content strong {
+    color: #00bcd4;
+  }
+
+  .about-section p {
+    margin-bottom: 20px;
+  }
+
+  .highlight {
+    background-color: #f5f5f5;
+    border-left: 5px solid #00bcd4;
+    padding: 15px 20px;
+    margin-top: 30px;
+    font-style: italic;
+  }
+</style>
+
+<section class="about-hero">
+  <h1>About Ashafalalah.LTD</h1>
+</section>
+
+<section class="about-content">
+  <p>
+    At <strong>Ashafalalah.LTD</strong>, we are driven by innovation and community growth.
+    Founded with a vision to empower young minds and create digital solutions for modern challenges,
+    our mission is to build platforms that educate, connect, and inspire.
+  </p>
+  <p>
+    Our flagship projects include the development of <strong>AI-powered educational tools</strong>,
+    <strong>solar-powered tech hubs</strong>, and initiatives that promote <strong>digital literacy</strong>
+    and <strong>entrepreneurship</strong> in Africa, starting from our roots in Kano State, Nigeria.
+  </p>
+  <p>
+    With a strong commitment to <strong>excellence</strong>, <strong>accessibility</strong>, and <strong>social impact</strong>,
+    Ashafalalah.LTD aims to go beyond business — we aim to build a legacy.
+  </p>
+  <div class="highlight">
+    A name that represents family, future, and forward-thinking technology.
+  </div>
+</section>
+{% endblock %}
